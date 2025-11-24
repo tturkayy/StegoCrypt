@@ -200,6 +200,7 @@ Here is a reference table to help you choose the right cover image:
 
 **Q: The UI freezes during encryption.**
 <br>A: This should not happen as the tool is multi-threaded. If it does, ensure you are not processing a massive file (e.g., >500MB) on a low-RAM machine.
+
 ---
 ## 📄 License
 
