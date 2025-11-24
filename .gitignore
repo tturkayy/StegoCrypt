@@ -1,0 +1,31 @@
+# --- Python & Environment ---
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- PyInstaller Build Artifacts ---
+build/
+dist/
+*.spec
+
+# --- Generated Assets during Build ---
+file_version_info.txt
+
+# --- Local Test Files ---
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.zip
+
+#hariç
+!logo.png
+!app.ico
+!screenshot.png
