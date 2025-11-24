@@ -29,7 +29,33 @@ This is where the magic happens. The encrypted binary data is injected into the 
 * **The Trick:** Changing a value from `255` (1111111**1**) to `254` (1111111**0**) is invisible to the human eye but perfect for storing binary data.
 * **Capacity:** StegoCrypt utilizes all 3 color channels, storing **3 bits of data per pixel**.
 
-![LSB Steganography Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lsb_steganography_example.svg/1200px-Lsb_steganography_example.svg.png)
+```mermaid
+graph LR
+    subgraph Original_Pixel [Original Pixel]
+        direction TB
+        A[Red Channel<br>1011001<b>1</b>]
+    end
+    
+    subgraph Secret_Data [Secret Data]
+        direction TB
+        B[Binary Bit<br><b>0</b>]
+    end
+    
+    subgraph Modified_Pixel [Modified Pixel]
+        direction TB
+        C[Red Channel<br>1011001<b>0</b>]
+    end
+
+    A -->|LSB Replacement| C
+    B -->|Inject| C
+    C -->|Visual Check| D[No Visible Change 👁️]
+    
+    %% Stillendirme: Arka plan renkleri + Siyah Yazı (color:#000)
+    style A fill:#ff9999,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#ffff99,stroke:#333,stroke-width:2px,color:#000
+    style C fill:#9999ff,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#ffffff,stroke:#333,stroke-width:2px,color:#000,stroke-dasharray: 5 5
+ ```
 *(Visualization of how bit manipulation works on pixel level)*
 
 ---
