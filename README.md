@@ -111,6 +111,19 @@ StegoCrypt/
 5.  **Success:** The tool will extract the hidden data, decrypt it, and save the original `contract.pdf` to your computer.
 
 ---
+## 📥 Download Executable (No Python Required)
+
+You can download the **.exe** file directly and run it instantly.
+
+> **Latest Version:** v1.0.0 (Official Release)
+
+1.  Click the link below to visit the Releases page.
+2.  Download **`StegoCrypt.exe`** from the "Assets" section.
+3.  Double-click to run! (Portable app, no installation needed).
+
+**[Download StegoCrypt v1.0.0 Here](https://github.com/tturkayy/StegoCrypt/releases/tag/v1.0.0)**
+
+---
 
 ## 🛠️ Installation & Setup
 
