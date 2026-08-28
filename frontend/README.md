@@ -1,7 +1,21 @@
-# Tauri + React
+# StegoCrypt Frontend
 
-This template should help get you started developing with Tauri and React in Vite.
+Desktop UI and native Rust bridge built with Tauri v2.
 
-## Recommended IDE Setup
+## Structure
+* `src/`: React + Tailwind CSS interface
+* `src-tauri/`: Rust runtime and backend bridge invoking the Python engine
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## Development
+
+Install dependencies:
+    npm install
+
+Run UI in browser:
+    npm run dev
+
+Run desktop app in dev mode:
+    npm run tauri dev
+
+Build installer (.msi / .exe):
+    npm run tauri build
