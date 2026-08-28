@@ -1,0 +1,50 @@
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# --- Node & Frontend ---
+node_modules/
+dist/
+.npm
+package-lock.json
+
+# --- Rust & Cargo / Tauri Artifacts ---
+target/
+**/target/
+frontend/dist/
+frontend/node_modules/
+frontend/src-tauri/target/
+frontend/src-tauri/dist/
+frontend/src-tauri/build/
+
+# --- PyInstaller Build Artifacts ---
+build/
+*.spec
+file_version_info.txt
+
+# --- IDE & OS Settings ---
+.vscode/
+.idea/
+*.swp
+*.suo
+*.user
+Thumbs.db
+.DS_Store
+
+# --- Local Test & Temporary Files ---
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.zip
+
+# --- Whitelisted Project Assets ---
+!app.ico
+!logo.png
+!screenshot.png
+!frontend/app-icon.png
+!frontend/src-tauri/icons/*

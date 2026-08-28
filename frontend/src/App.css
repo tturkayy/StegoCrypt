@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #020617;
+  color: #f8fafc;
+  user-select: none;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%) scaleX(0.2);
+  }
+  50% {
+    transform: translateX(0%) scaleX(0.5);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.2);
+  }
+}
+
+.animate-indeterminate {
+  width: 100%;
+  animation: indeterminate 1.5s infinite ease-in-out;
+  transform-origin: 0% 50%;
+}
